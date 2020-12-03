@@ -1,16 +1,10 @@
 import React from "react"
 import Button from '@material-ui/core/Button';
+import Box from '@material-ui/core/Box';
+import Counter from '../components/counter'
 
 export default function Home() {
   return <div>
-    <p>
-      Clicked: <span id="value">0</span> times
-      <Button variant="contained" color="primary">
-        +
-      </Button>
-      <Button variant="contained" color="primary">
-        -
-      </Button>
-    </p>
+   <Counter>+</Counter>
   </div>
 }
