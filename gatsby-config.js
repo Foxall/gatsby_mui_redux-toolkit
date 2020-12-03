@@ -1,10 +1,17 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
-}
+  plugins: [
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        pathToCreateStoreModule: './src/state/configStore',
+        serialize: {
+          space: 0,
+          isJSON: true,
+          unsafe: false,
+          ignoreFunction: true,
+        },
+        windowKey: '__PRELOADED_STATE__',
+      },
+    },
+  ],
+};
