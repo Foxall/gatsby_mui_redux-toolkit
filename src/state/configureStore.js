@@ -1,5 +1,5 @@
 import { configureStore as rtkConfigureStore } from '@reduxjs/toolkit'
-import incrementReducer from './demoSlice'
+import counterReducer from './demoSlice'
 
-const configureStore = () => rtkConfigureStore({ reducer: {increment: incrementReducer} })
+const configureStore = () => rtkConfigureStore({ reducer: {counter: counterReducer} })
 export default configureStore
