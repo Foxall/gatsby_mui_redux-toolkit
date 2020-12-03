@@ -3,7 +3,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
-        pathToCreateStoreModule: './src/state/configStore',
         serialize: {
           space: 0,
           isJSON: true,
