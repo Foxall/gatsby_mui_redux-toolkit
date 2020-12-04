@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 
 const Counter =() =>{
 
-  const name = useSelector((state) => state.counter)
+  const name = (useSelector((state) => state.counter.value))
 
   return (
     <div>
