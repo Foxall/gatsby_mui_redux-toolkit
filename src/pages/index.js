@@ -1,10 +1,8 @@
 import React from "react"
-import Button from '@material-ui/core/Button';
-import Box from '@material-ui/core/Box';
-import Counter from '../components/counter'
+import Counter from '../components/Counter'
 
 export default function Home() {
   return <div>
-   <Counter>+</Counter>
+    <Counter/>
   </div>
 }
