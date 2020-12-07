@@ -4,14 +4,16 @@ import TextField from '@material-ui/core/TextField'
 import { useSelector, useDispatch } from 'react-redux'
 import { incrementByAmount } from '../state/demoSlice'
 
-const Textfbutton =() =>{
+const TextButton =() =>{
 
+  const [value, setValue] = React.useState('Controlled');
     const dispatch = useDispatch()
+    const handleChange = (event) => { dispatch(incrementByAmount(event.target.value))};
+
     return (
       <div>
-        <TextField id="standard-basic" label="choose a number"/>
-        <Button variant="contained" >Validate</Button>
+         <TextField id="standard-basic" onChange={handleChange}/>
       </div>
     )
   }
-  export default Textfbutton
+  export default TextButton
