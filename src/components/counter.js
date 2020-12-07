@@ -5,6 +5,8 @@ import TextField from '@material-ui/core/TextField'
 import { useSelector, useDispatch } from 'react-redux'
 import { increment , decrement } from '../state/demoSlice'
 import TextButton from './textbutton'
+import Myliste from './myliste'
+
 const Counter =() =>{
   const dispatch = useDispatch()
   const name = useSelector((state) => state.counter.value)
@@ -14,6 +16,7 @@ const Counter =() =>{
       <Button variant="contained" onClick={() => dispatch(decrement())}>-</Button>
       <TextField value={name} id="standard-basic"/>
       <TextButton/>
+      <Myliste/>
     </div>
   )
 }
