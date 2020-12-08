@@ -1,12 +1,10 @@
-import React, { useReducer, useRef, useEffect } from 'react'
-import Button from '@material-ui/core/Button'
+import React from 'react'
 import TextField from '@material-ui/core/TextField'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { setNumber } from '../state/demoSlice'
 
 const TextButton =() =>{
 
-  const [value, setValue] = React.useState('Controlled');
     const dispatch = useDispatch()
     const handleChange = (event) => { dispatch(setNumber(event.target.value))};
 
