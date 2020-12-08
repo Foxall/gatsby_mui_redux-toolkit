@@ -17,8 +17,6 @@ const createUsers = (numUsers = 5) => Array.from({length: numUsers}, createUser)
 
 const Users = createUsers()
 
-const maps = Users.map((item,i)=><li key={i} >{item.name}</li>)
-
 const Myliste = () => {
 
 
@@ -26,7 +24,7 @@ const Myliste = () => {
   return (
     <List component='nav' aria-label='secondary mailbox folders'>
       <ListItem>
-        <ListItemText primary={maps} />
+        <ListItemText primary={Users.map((item,i)=><li key={i} >{item.name}</li>)}/>
       </ListItem>
     <List/>
       
