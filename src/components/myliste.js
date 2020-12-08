@@ -17,7 +17,7 @@ const createUsers = (numUsers = 5) => Array.from({length: numUsers}, createUser)
 
 const Users = createUsers()
 
-const list = Users.map((item,i)=><li key={i} >{item.name}</li>)
+const list = Users.map((user,number)=><li key={number} >{user.name}</li>)
 
 const Myliste = () => {
 
