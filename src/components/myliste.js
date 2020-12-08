@@ -15,7 +15,9 @@ const createUser = () => (
 
 const createUsers = (numUsers = 5) => Array.from({length: numUsers}, createUser);
 
-const maps = createUsers.map.call((createUsers,i)=><li key={i} >item.name</li>)
+const Users = createUsers()
+
+const maps = Users.map((item,i)=><li key={i} >{item.name}</li>)
 
 const Myliste = () => {
 
@@ -23,9 +25,10 @@ const Myliste = () => {
 
   return (
     <List component='nav' aria-label='secondary mailbox folders'>
-      <ListItem button>
-        <ListItemText primary='Trash' />
+      <ListItem>
+        <ListItemText primary={maps} />
       </ListItem>
+    <List/>
       
    </List>
   )
