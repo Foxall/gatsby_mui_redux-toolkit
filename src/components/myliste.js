@@ -17,18 +17,16 @@ const createUsers = (numUsers = 5) => Array.from({length: numUsers}, createUser)
 
 const Users = createUsers()
 
+const list = Users.map((item,i)=><li key={i} >{item.name}</li>)
+
 const Myliste = () => {
-
-
 
   return (
     <List component='nav' aria-label='secondary mailbox folders'>
       <ListItem>
-        <ListItemText primary={Users.map((item,i)=><li key={i} >{item.name}</li>)}/>
+        <ListItemText primary={list}/>
       </ListItem>
-    <List/>
-      
-   </List>
+    </List>
   )
 }
 export default Myliste
