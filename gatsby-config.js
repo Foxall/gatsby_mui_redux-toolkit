@@ -7,10 +7,10 @@ module.exports = {
           space: 0,
           isJSON: true,
           unsafe: false,
-          ignoreFunction: true,
+          ignoreFunction: true
         },
-        windowKey: '__PRELOADED_STATE__',
-      },
-    },
-  ],
-};
+        windowKey: '__PRELOADED_STATE__'
+      }
+    }
+  ]
+}
