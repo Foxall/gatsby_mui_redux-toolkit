@@ -10,9 +10,9 @@ const createUsers = (numUsers = 5) => Array.from({ length: numUsers }, createUse
 
 const Users = createUsers()
 
-const name = Users.map((user, uuid) => (
+const name = Users.map((user) => (
   <ListItem>
-    <ListItemText key={uuid}>{user.name}</ListItemText>
+    <ListItemText key={user.uuid}>{user.name}</ListItemText>
   </ListItem>
 ))
 
