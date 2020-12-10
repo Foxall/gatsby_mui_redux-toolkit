@@ -19,7 +19,6 @@ const Counter = () => {
       </Button>
       <TextField value={name} id='standard-basic' />
       <TextButton />
-      <Myliste />
     </div>
   )
 }
