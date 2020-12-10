@@ -2,14 +2,11 @@ import React from 'react'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
-import faker from 'faker'
+import { useSelector } from 'react-redux'
 
 const Myliste = () => {
 
-
-  const createUser = () => ({ name: faker.name.findName(), email: faker.internet.email(), address: faker.address.streetAddress(), bio: faker.lorem.sentence(), image: faker.image.avatar(), uuid: faker.random.uuid })
-  const createUsers = (numUsers = 5) => Array.from({ length: numUsers }, createUser)
-  const Users = createUsers()
+  const Users = useSelector(state => state.fakelist.value)
 
   const name = Users.map((user) => (
     <ListItem>
