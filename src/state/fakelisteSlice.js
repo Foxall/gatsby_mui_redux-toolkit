@@ -6,11 +6,11 @@ const FakeListSlice = createSlice({
   name: 'fakeliste',
   initialState,
   reducers: {
-    setNumber (state, action) {
+    setRedux (state, action) {
         state.value = action.payload
         }
   }
 })
 
-export const {setNumber} = FakeListSlice.action
+export const {setNumbesetRedux} = FakeListSlice.action
 export default FakeListSlice.reducer
