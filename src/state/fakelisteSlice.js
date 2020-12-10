@@ -4,8 +4,8 @@ const createUser = () => ({ name: faker.name.findName(), email: faker.internet.e
 const createUsers = (numUsers = 5) => Array.from({ length: numUsers }, createUser)
 const Users = createUsers()
 
-const FakeListeSlice = createSlice({
-    name: 'counter',
+const FakeListSlice = createSlice({
+    name: 'fakeliste',
     Users
 })
 
