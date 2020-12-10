@@ -12,5 +12,5 @@ const FakeListSlice = createSlice({
   }
 })
 
-export const {setNumbesetRedux} = FakeListSlice.action
+export const { setRedux } = FakeListSlice.actions
 export default FakeListSlice.reducer
