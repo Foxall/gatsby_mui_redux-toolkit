@@ -4,7 +4,6 @@ import TextField from '@material-ui/core/TextField'
 import { useSelector, useDispatch } from 'react-redux'
 import { increment, decrement } from '../state/demoSlice'
 import TextButton from './textbutton'
-import Myliste from './myliste'
 
 const Counter = () => {
   const dispatch = useDispatch()

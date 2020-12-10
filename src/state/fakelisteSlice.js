@@ -5,4 +5,4 @@ const FakeListSlice = createSlice({
     Users
 })
 
-export const FakeListSlice;
+export default FakeListSlice;
