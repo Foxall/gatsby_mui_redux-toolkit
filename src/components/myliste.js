@@ -7,8 +7,8 @@ import { useSelector } from 'react-redux'
 const Myliste = () => {
   const Users = useSelector((state) => state.fakelist.value)
   const name = Users.map((user) => (
-    <ListItem>
-      <ListItemText key={user.uuid}>{user.name}</ListItemText>
+    <ListItem key={user.uuid}>
+      <ListItemText>{user.name}</ListItemText>
     </ListItem>
   ))
 
