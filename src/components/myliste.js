@@ -12,8 +12,6 @@ const Myliste = () => {
     </ListItem>
   ))
 
-  console.log(Users)
-
   return (
     <div>
       <List>{name}</List>
