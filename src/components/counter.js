@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '@material-ui/core/Button'
+import { Button } from 'gatsby-theme-material-ui'
 import TextField from '@material-ui/core/TextField'
 import { useSelector, useDispatch } from 'react-redux'
 import { increment, decrement } from '../state/demoSlice'
