@@ -7,7 +7,7 @@ import TextButton from './textbutton'
 
 const Counter = () => {
   const dispatch = useDispatch()
-  const name = useSelector(state => state.counter.value)
+  const name = useSelector((state) => state.counter.value)
   return (
     <div>
       <Button variant='contained' onClick={() => dispatch(increment())}>

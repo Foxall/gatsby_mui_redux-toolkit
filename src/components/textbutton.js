@@ -5,7 +5,7 @@ import { setNumber } from '../state/demoSlice'
 
 const TextButton = () => {
   const dispatch = useDispatch()
-  const handleChange = event => {
+  const handleChange = (event) => {
     dispatch(setNumber(event.target.value))
   }
 
