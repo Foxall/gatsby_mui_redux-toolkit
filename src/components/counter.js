@@ -16,7 +16,7 @@ const Counter = () => {
       <Button variant='contained' onClick={() => dispatch(decrement())}>
         -
       </Button>
-      <TextField value={name} id='standard-basic' />
+      <TextField value={name}/>
       <TextButton />
     </div>
   )

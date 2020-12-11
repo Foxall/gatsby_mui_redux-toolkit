@@ -11,7 +11,7 @@ const TextButton = () => {
 
   return (
     <div>
-      <TextField id='standard-basic' onChange={handleChange} />
+      <TextField onChange={handleChange} />
     </div>
   )
 }
